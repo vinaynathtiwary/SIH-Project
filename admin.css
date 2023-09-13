@@ -41,3 +41,13 @@ input[type="password"] {
 .btn-submit:hover {
   background-color: #0056b3;
 }
+
+@media screen and (max-width: 600px) {
+  .login-container {
+    width: 280px;
+    padding: 40px;
+  }
+  .login {
+    margin-top: 100px;
+  }
+}

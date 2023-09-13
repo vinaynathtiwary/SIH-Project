@@ -128,14 +128,18 @@ body {
     width: 100vw;
     margin-top: 40px;
   }
+  .header div img {
+    height: 80px;
+    margin-top: 5px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .header div h2 {
-    font-size: 20px;
+    font-size: 16px;
   }
   .noteSection div {
-    width: 70vw;
+    width: 80vw;
     height: 350px;
     background-color: rgba(240, 248, 255, 0.692);
     padding: 20px;
@@ -152,7 +156,8 @@ body {
     margin-top: 40px;
   }
   .header div img {
-    height: 60px;
+    height: 80px;
+    margin-top: 5px;
   }
 }
 
@@ -160,14 +165,29 @@ body {
 @media screen and (max-width: 480px) {
   .header div h2 {
     font-size: 10px;
+    margin-left: 10px;
+  }
+
+  .header div img {
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .header div h2 {
+    font-size: 10px;
   }
   .noteSection div {
     width: 70vw;
-    height: 400px;
+    height: 300px;
     background-color: rgba(240, 248, 255, 0.692);
     padding: 20px;
     border-radius: 10px;
     padding-top: 10px;
+  }
+
+  .noteSection {
+    font-size: 16px;
   }
 
   .button {
@@ -191,9 +211,5 @@ body {
     color: rgb(255, 255, 255);
     border-color: rgba(0, 0, 0, 0);
     cursor: pointer;
-  }
-
-  .header div img {
-    height: 50px;
   }
 }
