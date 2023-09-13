@@ -12,3 +12,8 @@ function redirectToUserPage() {
   var targetPageUrl = "userLogin.html";
   window.location.href = targetPageUrl;
 }
+
+function redirectTootpPage() {
+  var targetPageUrl = "otpForm.html";
+  window.location.href = targetPageUrl;
+}

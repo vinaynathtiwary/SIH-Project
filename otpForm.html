@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="icon" href="images/img3.png" type="icon" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="otpForm.css" />
+  </head>
+
+  <body>
+    <section class="filter">
+      <header class="header">
+        <div>
+          <img src="./images/img4.png" alt="image" />
+          <h2>
+            E-Portal of Conference & Case Management Hearing <br />
+            Government Of India
+          </h2>
+          <img src="./images/img3.png" alt="image" />
+        </div>
+      </header>
+      <div class="otpForm">
+        <h1>OTP Verification</h1>
+        <form action="process-otp.php" method="post">
+          <label for="otp">Enter OTP:</label>
+          <input type="text" id="otp" name="otp" required />
+          <br />
+          <input type="submit" value="Submit OTP" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
