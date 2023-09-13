@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>admin login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="admin.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <section class="filter">
+      <header class="header">
+        <div>
+          <img src="./images/img2.png" alt="image" />
+          <h2>
+            E-Portal of Conference & Case Management Hearing <br />
+            Government Of India
+          </h2>
+          <img src="./images/img3.png" alt="image" />
+        </div>
+      </header>
+
+      <main>
+        <section class="login">
+          <div class="login-container">
+            <h2>Admin Login</h2>
+            <form action="admin_login_process.php" method="post">
+              <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required />
+              </div>
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+              <button type="submit" class="btn-submit">Login</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </section>
+  </body>
+</html>

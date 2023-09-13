@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form.css" />
+  </head>
+
+  <body>
+    <section class="filter">
+      <header class="header">
+        <div>
+          <img src="./images/img2.png" alt="image" />
+          <h2>
+            E-Portal of Conference & Case Management Hearing <br />
+            Government Of India
+          </h2>
+          <img src="./images/img3.png" alt="image" />
+        </div>
+      </header>
+
+      <main>
+        <div class="formContainer">
+          <form class="form">
+            <div class="inputForm">
+              <div>
+                <label for="name">Name:</label><br />
+                <input type="text" id="name" name="name" required /><br />
+
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email" required /><br />
+
+                <label for="contact">Contact Number (10 characters only):</label
+                ><br />
+                <input
+                  type="tel"
+                  id="contact"
+                  name="contact"
+                  pattern="[0-9]{10}"
+                  required
+                /><br />
+                <label for="aadhar">Aadhar Number (12 characters only):</label
+                ><br />
+                <input
+                  type="text"
+                  id="aadhar"
+                  name="aadhar"
+                  pattern="[0-9]{12}"
+                  required
+                /><br />
+
+                <label for="state">State:</label><br />
+                <input type="text" id="state" name="state" required /><br />
+
+                <label for="district">District:</label><br />
+                <input
+                  type="text"
+                  id="district"
+                  name="district"
+                  required
+                /><br />
+
+                <label for="police_station">Police Station:</label><br />
+                <input
+                  type="text"
+                  id="police_station"
+                  name="police_station"
+                  required
+                /><br />
+              </div>
+              <div>
+                <label for="address">Address:</label><br />
+                <textarea id="address" name="address" required></textarea><br />
+
+                <label for="pic_code">Pic Code (6 characters):</label><br />
+                <input
+                  type="text"
+                  id="pic_code"
+                  name="pic_code"
+                  pattern="[A-Za-z0-9]{6}"
+                  required
+                /><br />
+
+                <label for="lawyer_name">Lawyer Name:</label><br />
+                <input
+                  type="text"
+                  id="lawyer_name"
+                  name="lawyer_name"
+                  required
+                /><br />
+
+                <label for="affiliation_number"
+                  >Lawyer Affiliation Number:</label
+                ><br />
+                <input
+                  type="text"
+                  id="affiliation_number"
+                  name="affiliation_number"
+                  required
+                /><br />
+
+                <label for="case_description">Case Description:</label><br />
+                <textarea
+                  id="case_description"
+                  name="case_description"
+                  required
+                ></textarea
+                ><br />
+
+                <label for="pdf_document">Upload Document (PDF format):</label
+                ><br />
+                <input
+                  type="file"
+                  id="pdf_document"
+                  name="pdf_document"
+                  accept=".pdf"
+                  required
+                /><br />
+              </div>
+            </div>
+            <div class="submit">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
