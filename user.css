@@ -45,3 +45,10 @@ input[type="text"] {
     padding: 40px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .login-container {
+    width: 250px;
+    padding: 30px;
+  }
+}
