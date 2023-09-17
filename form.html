@@ -3,131 +3,167 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>form</title>
-    <link rel="icon" href="images/img3.png" type="icon" />
-
-    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script src="header.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="form.css" />
+    <!-- <link rel="stylesheet" href="common.css" /> -->
   </head>
-
   <body>
-    <section class="filter">
-      <header class="header">
-        <div>
-          <img src="./images/img4.png" alt="image" />
-          <h2>
-            E-Portal of Conference & Case Management Hearing <br />
-            Government Of India
-          </h2>
-          <img src="./images/img3.png" alt="image" />
-        </div>
-      </header>
-
-      <main>
-        <div class="formContainer">
-          <form class="form">
-            <div class="inputForm">
-              <div>
-                <label for="name">Name:</label><br />
-                <input type="text" id="name" name="name" required /><br />
-
-                <label for="email">Email:</label><br />
-                <input type="email" id="email" name="email" required /><br />
-
-                <label for="contact">Contact Number (10 characters only):</label
-                ><br />
-                <input
-                  type="tel"
-                  id="contact"
-                  name="contact"
-                  pattern="[0-9]{10}"
-                  required
-                /><br />
-                <label for="aadhar">Aadhar Number (12 characters only):</label
-                ><br />
-                <input
-                  type="text"
-                  id="aadhar"
-                  name="aadhar"
-                  pattern="[0-9]{12}"
-                  required
-                /><br />
-
-                <label for="state">State:</label><br />
-                <input type="text" id="state" name="state" required /><br />
-
-                <label for="district">District:</label><br />
-                <input
-                  type="text"
-                  id="district"
-                  name="district"
-                  required
-                /><br />
-
-                <label for="police_station">Police Station:</label><br />
-                <input
-                  type="text"
-                  id="police_station"
-                  name="police_station"
-                  required
-                /><br />
-              </div>
-              <div>
-                <label for="address">Address:</label><br />
-                <textarea id="address" name="address" required></textarea><br />
-
-                <label for="pic_code">Pic Code (6 characters):</label><br />
-                <input
-                  type="text"
-                  id="pic_code"
-                  name="pic_code"
-                  pattern="[A-Za-z0-9]{6}"
-                  required
-                /><br />
-
-                <label for="lawyer_name">Lawyer Name:</label><br />
-                <input
-                  type="text"
-                  id="lawyer_name"
-                  name="lawyer_name"
-                  required
-                /><br />
-
-                <label for="affiliation_number"
-                  >Lawyer Affiliation Number:</label
-                ><br />
-                <input
-                  type="text"
-                  id="affiliation_number"
-                  name="affiliation_number"
-                  required
-                /><br />
-
-                <label for="case_description">Case Description:</label><br />
-                <textarea
-                  id="case_description"
-                  name="case_description"
-                  required
-                ></textarea
-                ><br />
-
-                <label for="pdf_document">Upload Document (PDF format):</label
-                ><br />
-                <input
-                  type="file"
-                  id="pdf_document"
-                  name="pdf_document"
-                  accept=".pdf"
-                  required
-                /><br />
-              </div>
-            </div>
-            <div class="submit">
-              <input type="submit" value="Submit" />
-            </div>
-          </form>
-        </div>
-      </main>
-    </section>
+    <header-component></header-component>
+    <form action="/case_details" class="main_form">
+      <div class="form__group field">
+        <input
+          type="text"
+          class="form__field"
+          placeholder="Name"
+          name="name"
+          id="name"
+          required
+        />
+        <label for="name" class="form__label">Name</label>
+      </div>
+      <div class="form__group field">
+        <input
+          type="email"
+          class="form__field"
+          placeholder="Email"
+          name="email"
+          id="email"
+          required
+        />
+        <label for="Email" class="form__label">Email</label>
+      </div>
+      <div class="form__group field">
+        <input
+          type="tel"
+          class="form__field"
+          placeholder="Contact Number"
+          name="Contact Number"
+          id="Contact_Number"
+          pattern="[0-9]{10}"
+          required
+        />
+        <label for="Contact Number" class="form__label">Contact Number</label>
+      </div>
+      <div class="form__group field">
+        <input
+          type="text"
+          class="form__field"
+          placeholder="Aadhar Number"
+          name="Aadhar Number"
+          id="Aadhar_Number"
+          pattern="[0-9]{12}"
+          required
+        />
+        <label for="Aadhar Number" class="form__label">Aadhar Number</label>
+      </div>
+      <div class="form__group field">
+        <input
+          type="text"
+          class="form__field"
+          placeholder="State"
+          name="State"
+          id="State"
+          required
+        />
+        <label for="State" class="form__label">State</label>
+      </div>
+      <div class="form__group field">
+        <input
+          type="text"
+          class="form__field"
+          placeholder="District"
+          name="District"
+          id="District"
+          required
+        />
+        <label for="District" class="form__label">District</label>
+      </div>
+      <div class="form__group field">
+        <input
+          type="text"
+          class="form__field"
+          placeholder="Police Station"
+          name="Police Station"
+          id="Police_Station"
+          required
+        />
+        <label for="Police_Station" class="form__label">Police Station</label>
+      </div>
+      <div class="form__group field">
+        <textarea
+          type="text"
+          class="form__field"
+          placeholder="Address"
+          name="Address"
+          id="Address"
+          required
+        ></textarea>
+        <label for="Address" class="form__label">Address</label>
+      </div>
+      <div class="form__group field">
+        <input
+          type="text"
+          class="form__field"
+          placeholder="Pic Code"
+          name="Pic Code"
+          id="Pic_Code"
+          pattern="[0-9]{6}"
+          required
+        />
+        <label for="Pic_Code" class="form__label">Pic Code</label>
+      </div>
+      <div class="form__group field">
+        <input
+          type="text"
+          class="form__field"
+          placeholder="Lawyer Name"
+          name="Lawyer Name"
+          id="Lawyer_Name"
+          required
+        />
+        <label for="Lawyer_Name" class="form__label">Lawyer Name</label>
+      </div>
+      <div class="form__group field">
+        <input
+          type="text"
+          class="form__field"
+          placeholder="Affiliation Number"
+          name="Lawyer Affiliation Number"
+          id="Affiliation_Number"
+          required
+        />
+        <label for="Affiliation_Number" class="form__label"
+          >Affiliation Number</label
+        >
+      </div>
+      <div class="form__group field">
+        <textarea
+          type="text"
+          class="form__field"
+          placeholder="Case Description"
+          name="Case_Description"
+          id="Case_Description"
+          required
+        ></textarea>
+        <label for="Case_Description" class="form__label"
+          >Case Description</label
+        >
+      </div>
+      <div class="form__group field">
+        <input
+          type="file"
+          class="form__field"
+          placeholder="Upload Document"
+          name="Upload Document"
+          id="Upload Document"
+          required
+        />
+        <label for="pdf_document" class="form__label">Upload Document</label>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
   </body>
 </html>

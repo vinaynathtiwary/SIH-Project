@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inika&display=swap");
+
+body {
+  font-family: Inika, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, white 20%, rgb(0, 255, 195) 80%);
+  overflow-x: hidden;
+}
+.culogo {
+  /* border:2px solid red; */
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.culogo img {
+  height: 10%;
+  /* bordeR:2px solid red; */
+  width: 10%;
+}
+.container {
+  /* border:2px solid red; */
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.cards {
+  /* border:2px solid red; */
+  height: 35vh;
+  width: 20vw;
+  background-color: #fff;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+
+.cards {
+  text-align: center;
+}
+
+.cards a {
+  height: 50px;
+  width: 70px;
+  background-color: rgb(38, 134, 112);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.cards .heading {
+  /* border:2px solid red; */
+  height: 35px;
+  background-color: rgb(38, 134, 112);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.cards .footer {
+  /* border:2px solid red; */
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgb(38,  134,  112);
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    /* border:2px solid red; */
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

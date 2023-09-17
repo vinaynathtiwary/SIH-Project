@@ -1,189 +1,130 @@
-@import url("https://fonts.googleapis.com/css2?family=Inika&display=swap");
+.main_form {
+  bottom: 0;
+  height: 80vh;
+  width: 100vw;
+  position: fixed;
+  overflow-y: scroll;
+  /* margin: 0 auto; */
+  /* left: 50%; */
+  /* transform: translateX(-25%); */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
 
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50vw;
+
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: rgb(255, 0, 0);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:placeholder-shown ~ .form__label {
+      font-size: 1.3rem;
+      cursor: text;
+      top: 20px;
+    }
+  }
+
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: gray;
+  }
+
+  .form__field:focus {
+    ~ .form__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: #11998e;
+      font-weight: 700;
+    }
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+  }
+}
+
+/* Reset input */
+.form__field {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}
+
+/* Demo styles */
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #00000071;
-  background-image: url("images/img1.jpg");
-  background-size: cover;
-  background-position: top;
-  font-family: "Inika", serif;
-  overflow-x: hidden;
-}
-
-.header {
-  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
   background-color: rgb(255, 255, 255);
-  height: 100px;
-  box-shadow: 0.1px 0px 5px 5px black;
+  padding: 0%;
+  margin: 0%;
 }
 
-.filter {
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.535);
-}
-
-.header div {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-  text-align: center;
-}
-
-.header div img {
-  height: 80px;
-}
-
-.formContainer {
-  background-color: rgba(255, 255, 255, 0.707);
-  height: 600px;
-  padding-top: 150px;
-}
-
-.inputForm {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.inputForm div input {
-  width: 500px;
-  height: 35px;
-  border-color: rgba(240, 248, 255, 0);
-  border-radius: 10px;
-}
-
-.inputForm div textarea {
-  width: 500px;
+.submit input {
   height: 50px;
-  border-color: rgba(240, 248, 255, 0);
+  width: 150px;
+  border: none;
+  font-size: 15px;
+  background-color: #11998e;
   border-radius: 10px;
 }
 
 .submit {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 200px;
+  margin-top: 40px;
+  margin-left: 40%;
+  margin-bottom: 50px;
 }
 
-.submit input {
-  font-size: 15px;
-  color: white;
-  width: 200px;
-  height: 50px;
-  border-radius: 20px;
-  cursor: pointer;
-  border-color: rgba(127, 255, 212, 0);
-  background-color: rgb(60, 138, 255);
-}
-
-@media screen and (max-width: 1280px) {
-  .formContainer {
-    height: 100vh;
-    width: 100vw;
+@media screen and (max-width: 720px) {
+  .form__group {
+    width: 80vw;
   }
-
-  .inputForm div input {
-    width: 700px;
-    height: 25px;
-    border-color: rgba(240, 248, 255, 0);
-    border-radius: 10px;
-    padding-top: 10px;
-  }
-
-  .inputForm div textarea {
-    width: 700px;
-    height: 40px;
-    border-color: rgba(240, 248, 255, 0);
-    border-radius: 10px;
-  }
-
-  .inputForm {
-    flex-direction: column;
-  }
-
-  .inputForm div input {
-    border-radius: 10px;
-  }
-
-  .inputForm div textarea {
-    border-radius: 10px;
-  }
-  .submit {
-    padding-right: 15%;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .header div img {
-    height: 40px;
-  }
-  .inputForm div input {
-    width: 350px;
-    height: 20px;
-    border-color: rgba(240, 248, 255, 0);
-    border-radius: 10px;
-    padding-top: 5px;
-  }
-
-  .formContainer {
-    background-color: rgba(255, 255, 255, 0.707);
-    height: 100%;
-    padding-top: 10px;
-    height: 100vh;
-    width: 100vw;
-    margin-top: px;
-    padding-top: 0;
-  }
-
-  .inputForm div textarea {
-    width: 350px;
-    height: 35px;
-  }
-
   .submit input {
-    font-size: 15px;
-    color: white;
-    width: 150px;
     height: 40px;
-    border-radius: 20px;
+    width: 100px;
   }
   .submit {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 200px;
-    padding-top: 10px;
+    margin-top: 30px;
+    margin-left: 60%;
   }
-}
-
-@media screen and (max-width: 500px) {
+  .header div {
+    font-size: 10px;
+  }
   .header div img {
-    height: 40px;
+    height: 50px;
   }
   .header {
-    height: 80px;
-  }
-  .formContainer {
-    height: 100vh;
-    width: 100vw;
-  }
-  .inputForm div input {
-    width: 300px;
-    height: 20px;
-    border-color: rgba(240, 248, 255, 0);
-    border-radius: 10px;
-    padding-top: 5px;
-  }
-  .inputForm div textarea {
-    width: 300px;
-    height: 30;
-  }
-  .submit {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 50px;
-    padding-top: 10px;
+    height: 100px;
   }
 }

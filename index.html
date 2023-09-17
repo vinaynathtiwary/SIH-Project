@@ -3,47 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home page</title>
-    <link rel="icon" href="images/img3.png" type="icon" />
-
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
   </head>
-
   <body>
-    <section class="filter">
-      <header class="header">
-        <div>
-          <img src="./images/img4.png" alt="image" />
-          <h2>
-            E-Portal of Conference & Case Management Hearing <br />
-            Government Of India
-          </h2>
-          <img src="./images/img3.png" alt="image" />
-        </div>
-      </header>
+    <div class="culogo">
+      <img src="images/img4.png" alt="" />
+    </div>
+    <div class="container">
+      <div class="cards" id="card1">
+        <div class="heading"></div>
+        <h3>Case Status</h3>
+        <p>Login to access your Case Information and Further details</p>
 
-      <main>
-        <div class="noteSection">
-          <div>
-            <h3>Note:-</h3>
-            <p>
-              Before applying for a case or attending any per-hearing
-              conference, it is essential to thoroughly review all the rules and
-              regulations outlined on the official website as per the guidance
-              provided by the Ministry of Law. It is crucial to familiarize
-              yourself with every point of the guide.
-            </p>
-            <button>Click Here!</button>
-          </div>
-        </div>
+        <a href="userLogin.html" target="_blank">Login Now</a>
 
-        <div class="button">
-          <button onclick="redirectToAdminPage()">Admin Login</button>
-          <button onclick="redirectToFormPage()">Case E-Filing Apply</button>
-          <button onclick="redirectToUserPage()">User Conference Login</button>
-        </div>
-      </main>
-    </section>
+        <!-- <div class="footer"></div> -->
+      </div>
+      <div class="cards" id="card2">
+        <div class="heading"></div>
+        <h3>E-Apply</h3>
+        <p>You Don't need to come physically in the court to file the case</p>
+
+        <a href="form.html" target="_blank">Apply Now</a>
+
+        <!-- <div class="footer"></div> -->
+      </div>
+      <div class="cards" id="card3">
+        <div class="heading"></div>
+        <h3>Admin Login</h3>
+
+        <p>
+          Login to access your account, keep track of your official services.
+        </p>
+
+        <a href="adminLogin.html" target="_blank">Login Now</a>
+
+        <!-- <div class="footer"></div> -->
+      </div>
+      <div class="cards" id="card4">
+        <div class="heading"></div>
+        <h3>Judge Login</h3>
+        <p>For Judge only. Use your CUID and Password to log in.</p>
+
+        <a href="judgeLogin.html" target="_blank">Login Now</a>
+
+        <!-- <div class="footer"></div> -->
+      </div>
+    </div>
   </body>
 </html>
